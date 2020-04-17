@@ -1,6 +1,11 @@
-// Import stylesheets
 import './style.css';
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+const canvas = document.querySelector("canvas");
+var newImg = new Image();
+newImg.onload = function() {
+      ctx.drawImage(newImg, 0, 0);
+}
+newImg.src = './image.jpg';
+
+
+const ctx = canvas.getContext('2d');
